@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mountain Forest - LeafLet Preview</title>
+  <title>Yogyakarta July 1966 Satellite Photo</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -80,7 +80,7 @@
           map.dragging.enable();
         })
 
-      var map = L.map('map').setView([45, 10], 6);
+      var map = L.map('map').setView([-7.7462927, 110.41071], 12);
       var baselayer =  L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
     	maxZoom:18,
     	minZoom: 5,
@@ -93,7 +93,7 @@
         tms: false
       }).addTo(map);
 
-      L.control.layers({'Basemap':baselayer},{'mf':mytile}).addTo(map);
+      L.control.layers({'Basemap':baselayer},{'Satellite Photo':mytile}).addTo(map);
 
 function getColor(d) {
     return d == 5  ? '#5E3C99' :
