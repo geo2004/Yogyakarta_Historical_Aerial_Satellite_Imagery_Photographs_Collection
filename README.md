@@ -1,8 +1,8 @@
-# Foto Satelit Kota Yogyakarta dan sekitarnya (Juli 1966)
+# Yogyakarta Historical Aerial or Satellite Imagery and Photographs Collection
+A historical collection of aerial photographs and satellite imagery covering the Yogyakarta City, Indonesia and its vicinity. 
 
-Foto Satelit Kota Yogyakarta dan wilayah di sekitarnya yang direkam pada Bulan Juli Tahun 1966 dengan Resolusi 1 Meter
-Data berasal dari Satelit Intelijen Amerika (CORONA - LANYARD Mission) yang sudah dideklasifikasi. 
-Data asli dapat diunduh dari https://earthexplorer.usgs.gov
+Data List:
+1. Satellite Photographs taken at July 1966 at 1 meter spatial resolution recorded by declassified U.S Satellite Reconnaisance Mission (CORONA- LANYARD). Data has been downloaded from USGS Earth Explorer (https://earthexplorer.usgs.gov) and georeferenced using 2D Third Order Polynomial Transformation to Web Mercator Projection (EPSG:3857). 
 
 
-Live View : https://geo2004.github.io/Yogyakarta_July1966_SatellitePhoto/index.html
+Live View : https://geo2004.github.io/Yogyakarta_Historical_Aerial_Satellite_Imagery_Photographs_Collection/index.html
