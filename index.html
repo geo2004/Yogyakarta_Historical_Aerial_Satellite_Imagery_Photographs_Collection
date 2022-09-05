@@ -89,14 +89,14 @@
 
 
       var mytile =L.tileLayer('https://github.com/geo2004/Yogyakarta_July1966_SatellitePhoto/raw/main/Yogya_071966_1Meter/{z}/{x}/{y}.png', {
-        maxZoom: 18,
+        maxZoom: 14,
 	minZoom: 5,
         tms: false
       }).addTo(map);
 	    
 	
 
-      L.control.layers({'Basemap':baselayer},{'Satellite Photo':mytile}).addTo(map);
+      L.control.layers({'Basemap':baselayer},{'Satellite Photo July 1966':mytile}).addTo(map);
 
 function getColor(d) {
     return d == 5  ? '#5E3C99' :
