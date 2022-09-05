@@ -65,6 +65,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 <script src="https://unpkg.com/leaflet-transparency@latest/leaflet-transparency.js"></script>
+<script src="plugins/Leaflet.Control.Opacity/dist/L.Control.Opacity.js"></script>
+<link href="plugins/Leaflet.Control.Opacity/dist/L.Control.Opacity.css" rel="stylesheet" />
 
   <script>
     $(document).ready(function () {
@@ -104,6 +106,12 @@
 	
 
       L.control.layers({'Basemap':baselayer},{'Satellite Photo July 1966':mytile}).addTo(map);
+	    //OpacityControl
+L.control
+    .opacity(mytile, {
+        label: 'Layers Opacity',
+    })
+    .addTo(map);
 
 function getColor(d) {
     return d == 5  ? '#5E3C99' :
