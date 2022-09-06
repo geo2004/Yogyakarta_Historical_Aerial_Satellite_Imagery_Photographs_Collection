@@ -8,9 +8,9 @@ const m_color = new L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={
 });
 
 //ArcGIS Satellite
-const m_mono = new L.tileLayer('https://tile.mierune.co.jp/mierune_mono/{z}/{x}/{y}.png', {
+const m_mono = new L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/{z}/{x}/{y}.png', {
     attribution:
-        "Maptiles by <a href='http://mierune.co.jp/' target='_blank'>MIERUNE</a>, under CC BY. Data by <a href='http://osm.org/copyright' target='_blank'>OpenStreetMap</a> contributors, under ODbL.",
+        "Maptiles by <a href='http://arcgis.com/' target='_blank'>ESRI ARCGIS</a>, under CC BY. Data by <a href='https://esri.com' target='_blank'>ESRI</a> contributors, ",
 });
 
 //Satellite Photo 1966
