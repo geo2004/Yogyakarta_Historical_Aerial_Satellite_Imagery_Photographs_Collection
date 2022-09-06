@@ -13,6 +13,15 @@ const m_mono = new L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/serv
         "Maptiles by <a href='http://arcgis.com/' target='_blank'>ESRI ARCGIS</a>, under CC BY. Data by <a href='https://esri.com' target='_blank'>ESRI</a> contributors, ",
 });
 
+//Google Map
+const m_map = new L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+    maxZoom:18,
+    	minZoom: 5,
+    	subdomains:['mt0'],
+	attribution:
+        "Maptiles by <a href='https://google.com/maps/' target='_blank'>GOOGLE</a>, under CC BY. Data by <a href='https://google.com' target='_blank'>Google</a> contributors, under ODbL.",
+});
+
 //Satellite Photo 1966
 const o_std = new L.tileLayer('https://github.com/geo2004/Yogyakarta_July1966_SatellitePhoto/raw/main/Yogya_071966_1Meter/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://earthexplorer.usgs.gov">USGS EarthExplorer</a> contributors',
@@ -42,6 +51,7 @@ const map = L.map('map', {
 const Map_BaseLayer = {
     'Google Satellite': m_color,
     'ArcGIS Satellite': m_mono,
+    'Google Map': m_map,
 };
 
 //AddLayer
