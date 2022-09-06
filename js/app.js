@@ -8,7 +8,7 @@ const m_color = new L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={
 });
 
 //ArcGIS Satellite
-const m_mono = new L.esri.TiledMapLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{x}/{y}', {
+const m_mono = new L.esri.TiledMapLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer', {
     attribution:
         "Maptiles by <a href='http://arcgis.com/' target='_blank'>ESRI ARCGIS</a>, under CC BY. Data by <a href='https://esri.com' target='_blank'>ESRI</a> contributors, ",
 });
