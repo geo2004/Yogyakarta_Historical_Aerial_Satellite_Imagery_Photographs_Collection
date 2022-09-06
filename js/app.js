@@ -13,15 +13,15 @@ const m_mono = new L.tileLayer('https://tile.mierune.co.jp/mierune_mono/{z}/{x}/
         "Maptiles by <a href='http://mierune.co.jp/' target='_blank'>MIERUNE</a>, under CC BY. Data by <a href='http://osm.org/copyright' target='_blank'>OpenStreetMap</a> contributors, under ODbL.",
 });
 
-//OSM
+//Satellite Photo 1966
 const o_std = new L.tileLayer('https://github.com/geo2004/Yogyakarta_July1966_SatellitePhoto/raw/main/Yogya_071966_1Meter/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://earthexplorer.usgs.gov">USGS EarthExplorer</a> contributors',
 });
 
-//GSI Pale
-const t_pale = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
+//Satellite Imagery 2010
+const t_pale = new L.tileLayer('https://github.com/geo2004/Yogya_2010_quickbird/raw/main/{z}/{x}/{y}.png', {
     attribution:
-        "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
+        "<a href='#' target='_blank'>Digital Globe</a>",
 });
 
 //GSI Ort
