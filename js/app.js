@@ -19,7 +19,7 @@ const o_std = new L.tileLayer('https://github.com/geo2004/Yogyakarta_July1966_Sa
 });
 
 //Satellite Imagery 2010
-const t_pale = new L.tileLayer('https://github.com/geo2004/Yogya_2010_quickbird/raw/main/{z}/{x}/{y}.png', {
+const t_pale = new L.tileLayer('https://github.com/geo2004/Yogyakarta_Historical_Aerial_Satellite_Imagery_Photographs_Collection/raw/main/Yogya_2010_quickbird/{z}/{x}/{y}.png', {
     attribution:
         "<a href='#' target='_blank'>Digital Globe</a>",
 });
