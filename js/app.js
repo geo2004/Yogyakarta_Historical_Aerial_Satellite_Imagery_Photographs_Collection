@@ -46,8 +46,8 @@ const Map_BaseLayer = {
 
 //AddLayer
 const Map_AddLayer = {
-    'Satellite Photo July 1966': o_std,
-    'GSI Pale': t_pale,
+    'Satellite Photo Corona July 1966': o_std,
+    'Satellite Imagery Quickbird 2010': t_pale,
     'GSI Ort': t_ort,
 };
 
