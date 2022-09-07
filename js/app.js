@@ -92,3 +92,9 @@ L.control
 
 //ScaleControl
 L.control.scale().addTo(map);
+//NavBarControl
+L.control.navbar().addTo(map);
+//ZoomBoxControl
+L.Control.boxzoom({ position:'topright' }).addTo(map);
+//GeocodingControl
+L.control.search({ position: 'topright' }).addTo(map);
