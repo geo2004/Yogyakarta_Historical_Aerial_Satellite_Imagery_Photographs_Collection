@@ -22,6 +22,27 @@ const m_map = new L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}
         "Maptiles by <a href='https://google.com/maps/' target='_blank'>GOOGLE</a>, under CC BY. Data by <a href='https://google.com' target='_blank'>Google</a> contributors, under ODbL.",
 });
 
+//MAP
+const map = L.map('map', {
+    center: [-7.7462927, 110.41071],
+    zoom: 13,
+    zoomControl: true,
+    layers: [m_color],
+	 fullscreenControl: true,
+  fullscreenControlOptions: {
+    position: 'topleft'
+  }
+});
+
+//Pane Creation
+map.createPane('order');
+
+// This pane is above markers but below popups
+map.getPane('order').style.zIndex = 650;
+
+// Layers in this pane are non-interactive and do not obscure mouse/touch events
+map.getPane('order').style.pointerEvents = 'none';
+
 //Satellite Photo 1966
 const o_std = new L.tileLayer('https://github.com/geo2004/Yogyakarta_July1966_SatellitePhoto/raw/main/Yogya_071966_1Meter/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://earthexplorer.usgs.gov">USGS EarthExplorer</a> contributors',
@@ -39,13 +60,6 @@ const t_ort = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/
         "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
 });
 
-//MAP
-const map = L.map('map', {
-    center: [-7.7462927, 110.41071],
-    zoom: 13,
-    zoomControl: true,
-    layers: [m_color],
-});
 
 //BaseLayer
 const Map_BaseLayer = {
@@ -74,3 +88,6 @@ L.control
         label: 'Layers Opacity',
     })
     .addTo(map);
+
+//ScaleControl
+L.control.scale().addTo(map);
