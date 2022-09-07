@@ -46,6 +46,7 @@ map.getPane('order').style.pointerEvents = 'none';
 //Satellite Photo 1966
 const o_std = new L.tileLayer('https://github.com/geo2004/Yogyakarta_July1966_SatellitePhoto/raw/main/Yogya_071966_1Meter/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://earthexplorer.usgs.gov">USGS EarthExplorer</a> contributors',
+	pane: 'order'
 });
 
 //Satellite Imagery 2010
